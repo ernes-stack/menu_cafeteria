@@ -1,0 +1,181 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background-color: #eaccad;
+    color: #333;
+    padding: 20px;
+}
+  
+/* Encabezado */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+  
+.titulo_carrito {
+    font-size: 2rem;
+    color: #2c3e50;
+    letter-spacing: 1px;
+}
+  
+/* Contenedor de mensaje */
+#contenedor_mensaje {
+    text-align: center;
+    font-size: 1rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Contenedor del carrito */
+#contenedor_carrito {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+  
+/* Tarjeta de producto */
+.producto_carrito {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    gap: 20px;
+}
+
+/* Imagen del producto */
+.carrito_img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Información del producto */
+.carrito_info {
+    flex: 1;
+    min-width: 150px;
+}
+
+.carrito_info h1 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+.carrito_info p {
+    font-size: 1rem;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* Controles de cantidad */
+.carrito_cantidad {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn_restar,
+.btn_agregar {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn_restar:hover,
+.btn_agregar:hover {
+    background-color: #2980b9;
+}
+
+.input_cantidad {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 6px;
+    background-color: #f9f9f9;
+}
+
+/* Botón eliminar */
+.btn_eliminar {
+    display: flex;
+    background-color: white;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: 1s;
+}
+
+.btn_eliminar img{
+    margin: 3px;
+    height: 27px;
+    width: 27px;
+}
+
+.btn_eliminar:hover {
+    scale: 115%;
+}
+
+/* Vaciar carrito y total */
+#btn_vaciar_carrito {
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+#btn_vaciar_carrito:hover {
+    background-color: #d35400;
+}
+
+#total_carrito {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-top: 10px;
+}
+
+/* Enlace a productos */
+#enlace_carrito {
+    display: inline-block;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px 16px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+#enlace_carrito:hover {
+    background-color: #2980b9;
+} 
