@@ -69,6 +69,7 @@ function imprimirMenu(productos) {
 imprimirMenu(menuObjetos);
 
 const carrito = [];
+
 //funcion al boton agregar
 function agregarAlCarrito() {
     const btnAgregarAlCarrito = document.querySelectorAll('.btn_agregar');
@@ -76,7 +77,6 @@ function agregarAlCarrito() {
         boton.addEventListener('click', (e) => {
             const idProducto = e.currentTarget.id;
             const productoSeleccionado = menuObjetos.find(producto => producto.id == idProducto);
-            // Buscar si ya está en el carrito
             productoSeleccionado.cantidad ++;
             carrito.push(productoSeleccionado);
             localStorage.setItem('carrito', JSON.stringify(carrito));
