@@ -29,7 +29,7 @@ function imprimirCarrito() {
                             <input class='input_cantidad' readonly type='number' value=${producto.cantidad}></input>
                             <button class='btn_agregar'>+</button>
                           </div>
-                          <button class='btn_eliminar' id='${producto.id}'><img src='../imagenes/basura.png' alt='Eliminar'></img></button>`;
+                          <button class='btn_eliminar' id='${producto.id}'><img src='../img/basura.png' alt='Eliminar'></img></button>`;
         contenedorCarrito.appendChild(card);
     })
     const contenedorMensaje = document.getElementById('contenedor_mensaje');
@@ -107,15 +107,19 @@ function vaciarCarrito() {
     const btnVaciarCarrito = document.getElementById('btn_vaciar_carrito');
 
     btnVaciarCarrito.addEventListener('click', () => {
+        if(carritoFiltrado.length !== 0){
+            Swal.fire({
+                text: 'Carrito Vaciado!',
+                icon: 'success',
+            });            
+        }
         carritoFiltrado.length = 0;
-
         const contenedorCarrito = document.getElementById('contenedor_carrito');
         contenedorCarrito.remove();
-
         localStorage.setItem('carrito', JSON.stringify(carritoFiltrado));
         actualizarTotal();
         mostarMensajeVacio();
-    })
+    });
 }
 
 //funcion para mostrar un mensaje si el carrito esta vacio

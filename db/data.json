@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "nombre": "Café con Leche",
+        "precio": 3400,
+        "img": "../img/cafe.jpg",
+        "cantidad": 0
+    },
+    {
+        "id": 2,
+        "nombre": "Té",
+        "precio": 1300,
+        "img": "../img/te.jpg",
+        "cantidad": 0
+    },
+    {
+        "id": 3,
+        "nombre": "Medialuna",
+        "precio": 1300,
+        "img": "../img/medialuna.jpg",
+        "cantidad": 0
+    },
+    {
+        "id": 4,
+        "nombre": "Porción de Torta",
+        "precio": 5000,
+        "img": "../img/torta.jpg",
+        "cantidad": 0
+    },
+    {
+        "id": 5,
+        "nombre": "Jugo de Naranja",
+        "precio": 3500,
+        "img": "../img/jugo.jpg",
+        "cantidad": 0
+    },
+    {
+        "id": 6,
+        "nombre": "Licuado",
+        "precio": 3700,
+        "img": "../img/licuado.jpg",
+        "cantidad": 0
+    },
+    {
+        "id": 7,
+        "nombre": "Cookies de Limón",
+        "precio": 3500,
+        "img": "../img/cookies.jpg",
+        "cantidad": 0
+    },
+    {
+        "id": 8,
+        "nombre": "Budín de Chocolate",
+        "precio": 3400,
+        "img": "../img/budin.jpg",
+        "cantidad": 0
+    }
+]
